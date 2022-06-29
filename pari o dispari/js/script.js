@@ -7,9 +7,9 @@ Dichiariamo chi ha vinto.*/
 
 // USER INPUTS
 
-const userBet = prompt(`Pari o dispari?`,)
-console.log(userBet)
-const UserNumber = parseInt(prompt('scegli un numero da 1 a 5'))
+const userBet = prompt(`Pari o dispari?`, 'dispari')
+console.log(`Il giocatore ha scelto ${userBet}`)
+const UserNumber = parseInt(prompt('scegli un numero da 1 a 5', 4))
 console.log(`user number is ${UserNumber}`)
 
 // FUNZIONE NUMERO RANDOM
@@ -34,7 +34,7 @@ console.log(`La somma dei numeri è ${numberSum}`)
 
 function isOdd(number) {
     let result;
-    return number % 3 ? result = 'pari' : result = 'dispari'
+    return number % 2 ? result = 'dispari' : result = 'pari'
 
 
 }
@@ -44,6 +44,7 @@ console.log(result)
 // CONDIZIONE DI VITTORIA DEL GIOCATORE e DICHIARAZIONE
 
 userBet === result ? console.log(`Hai vinto`) : console.log(`Ha vinto il CPU`)
+
 
 
 
