@@ -24,3 +24,8 @@ function isPalindrome(word) {
 isPalindrome()
 
 
+
+
+
+
+
